@@ -1,0 +1,149 @@
+
+# Empty list
+    #List = []
+
+'''L1 = []
+print(type(L1))
+print("Length of list L1 is ",len(L1))
+L1.append(5)
+L1.append(10)
+L1.append(15)
+L1.append(20)
+print(L1)
+print("Lenth of list L1 after using append function is",len(L1))
+'''
+# Ques. Create a list that comprises of numbers from 1 to 1000 ?
+
+#First we create an empty list
+L2 = []
+# now we have to store no. in L2 that ranges from 1 to 1000
+'''for num in range(1,1001):
+    L2.append(num)
+
+print(L2)'''
+
+# All the generic function that are applicable on list data type will also be applicable on dict, tupple kind of data types.
+
+# Ques. How to calculate length of list ?
+ 
+'''L3 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+print("Length of list L3 is",len(L3))
+'''
+# len --- len is a generic function which is used to calculate length of list, dict tupple data types.
+
+
+
+# Let's see how we can check weather the lists are equal to each other
+
+'''list1 = [10, "Abhishek", 2.5]
+list2 = [9, "Ankita", 5.6]
+print("Are both list1 and list2 are equal ?", list1 == list2)
+'''
+
+'''list3 = [10, "Abhishek", 2.5]
+list4 = [10, "Abhishek ", 2.5]
+print("Are list3 and list4 are equal ?",list3 == list4)
+'''
+
+'''list5 = [10, "Abhishek", 2.5]
+list6 = [10, "Abhishek", 2.5]
+print("List5 and list6 are equal ? ",list5 == list6)
+'''
+# So, this way we can compare and check weather lists are equal to each other or not and depending on True or False result we can perform the operation over it as desired.
+
+'''list7 = [10, "Abhishek", 2.5]
+list8 = [10, 2.5, "Abhishek"]
+print("List7 and list8 are equal ? ",list7 == list8)
+'''
+# on comparing two list, we get True only when both the list have equal number of elements as well as in the same sequence too.
+
+
+
+# LEt's see how we can concatenate two or more no. of lists
+
+'''list9 = [1,2,3]
+list10 = [4,5,6]
+print(list9 + list10)'''
+
+'''list9 = [1,2,3]
+list10 = [4,5,6]
+list11 = [7,8,9]
+print(list9 + list10 + list11)'''
+
+
+
+# Let's see how to access elements of list?
+
+list12 = [5,10,15,20,25,30]
+
+# Ques. print all the element of list?
+    #print(list12)
+#Another way
+for num in list12:
+    print(num)
+
+# Ques. print 3rd element of th list12
+        # Syntax for accessing any specific element of the list is----  "list name[index]"
+print("Third element of the list12 is ",list12[2])
+
+# so for accessing all elements of list without using for loop, we can go following way
+'''print(list12[0])
+print(list12[1])
+print(list12[2])
+print(list12[3])
+print(list12[4])
+print(list12[5])
+'''
+
+# Ques. What happen if for the following statement execution ?
+'''print(list12[100])''' #---- IndexError: list index out of range 
+# as there are only 6 elements present in the list12 existing from index 0 to index 5.
+
+
+# How to update the value of list index item?
+'''list13=[7,"Abhishek",2.5]
+print(list13)
+
+list13[1] = "Ankita"
+print(list13)'''
+
+
+# How to print list elements using length
+   # use indexing funda
+
+list14 = [1,4,7,8,2,5,6,9,3]  
+for index in range(0, len(list14)):
+    print(list14[index])
+
+
+# Ques.. list15 = [1,2,58,"Abhishek",[4,8,12,16],"Ankita"]   so what would be the length of list15 ?
+
+'''list15 = [1,2,58,"Abhishek",[4,8,12,16],"Ankita"]
+print("Length of list15 is",len(list15))'''
+ # o/p -- Length of list15 is 6.
+# Concept --- Everything stored in the list is treated as an individual element.
+
+
+
+# Ques.. What is the diffeerrence between append and extend ?
+list16 = [20,30,40]
+list17 = ["Hi","Hello","Bye"]
+'''list16.append(list17)
+
+print("O/p of append is ",list16)
+print("Length of list16 after append it is ",len(list16))
+
+#O/p of append is  [20, 30, 40, ['Hi', 'Hello', 'Bye']]
+#Length of list16 after append it is  4
+'''
+
+
+
+list16.extend(list17)
+print("O/p of extend is ",list16)
+print("Lenth of list16 after extend is ",len(list16))
+
+# O/p of extend is  [20, 30, 40, 'Hi', 'Hello', 'Bye']
+# Lenth of list16 after extend is  6
+
+
