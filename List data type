@@ -147,3 +147,69 @@ print("Lenth of list16 after extend is ",len(list16))
 # Lenth of list16 after extend is  6
 
 
+# LIST SLICING -- It will help us to access certain range of elements of list, means if i want to have access group of some specific elements from the list, then I can do that with this concept of list slicing.
+
+list17 = [20,30,40,50,60,80,90]
+# Syntax for list slicing ---  list name[start index : ending index] --- and here there is one more argument exist in the parantheses of list slicing and that is about step and that's 1.
+
+# we have following ways to print entire list17
+'''print(list17)
+print(list17[0:7])
+print(list17[:])'''
+
+
+# whwn we give indexes as arguments during list slicing --  First index is inclusive and second index ending index is always exclusive.
+
+# If we want to print only certain part of list17
+'''#print("section of element from oth index to 3rd index: ",list17[0:4])
+#print(list17[:4])'''
+
+'''print(list17[:])
+print(list17[3:])'''
+
+'''list17 = [20,30,40,50,60,80,90]
+
+# for printing elements from start to till 50
+print(list17[:4])
+
+# for printing from 40 to 80
+print(list17[2:6])'''
+
+
+# STEP Functio part ---- 
+list17 = [20,30,40,50,60,80,90]
+print(list17[:])
+# I want to print element from starting but want to take 2step jump. 
+print(list17[::2])          # Third value we give as argument in parantheses is for the step.
+
+# Using step concept we can skip some elements in the list while printing some desired section of list.
+
+# Ques. How to print the last element of list17 without knowing the length of list17 ?
+# Ans. For that we should be aware of the length of the list.
+    #print("last element of the list17 is: ",list17[len(list17)]) # -- IndexError: list index out of range
+'''print("Last element of list17 is: ",list17[len(list17)-1])
+'''
+
+# Ques. Print last second element of list17 without knowing the length of list17?
+'''print("Last second element of list17 is: ",list17[len(list17)-2])'''
+
+
+# NEGATIVE INDEX --- Negative index start from -1 then keeps on decreasing by 1 and therefore can be use to print list from backward or from last index toward index 0.
+
+# Negative Index -1 --- represent last element of list
+# Negative index -2 --- represent seecond last element of list.
+
+
+list17 = [20,30,40,50,60,80,90]
+# We can print last element of list without knowing the length of list using negative index 
+'''print("Last element of list using negative index concept :",list17[-1])
+print("Last second element of list17 using negative index:",list17[-2])
+print("Last third element of list17 using negative index:",list17[-3])
+'''
+
+# Negative Index -- It help when we have to traverse the list in the backward direction. 
+
+# Ques. print entire input list in reverse direction 
+print(list17[-1:]) # --- [90], this is the output we get and it is because the step parameter in it by default is always 1 that is positive one.
+print(list17[-1::-1])
+
